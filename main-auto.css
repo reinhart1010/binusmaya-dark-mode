@@ -1,0 +1,298 @@
+@media screen and (prefers-color-scheme: dark){
+body {
+    background: #101010;
+    color: #ffffff;
+}
+
+/* Login */
+#page .background {
+    background-color: #202120;
+}
+#page .background .overlay {
+    background: #101010;
+    opacity: 0.8;
+}
+#login,
+.login {
+    background: #202120;
+}
+.login form.custom-form .custom-textbox .icon-wrap {
+    background: none;
+}
+#login .bottom-nav {
+    background: #414042;
+}
+#login .bottom-nav a, .login.login-binusmaya .login-body .links li a {
+    color: #c9c9c9;
+}
+
+/* Header */
+.header .top-navigation .navigation.fixed-layout,
+#binus-header-wrapper {
+    background: #202120;
+    box-shadow: none;
+    border-bottom: solid 1px #bababa;
+}
+.header,
+.footer {
+    background: #202120;
+}
+
+@supports(backdrop-filter: blur()) {
+    .header .top-navigation .navigation.fixed-layout {
+        background: rgba(32, 33, 32, 0.5);
+        backdrop-filter: blur(20px);
+    }
+}
+
+/* Logo */
+img[src="https://bm5cdn.azureedge.net/asset/images/logo.png"],
+img[src="../asset/images/logo.png"],
+img[src="https://bm5cdn.azureedge.net/../asset/images/logo.png"],
+img[src="/Content/logo.png"] {
+    filter: contrast(0) brightness(2);
+}
+.banner-image,
+.ribbon {
+    filter: hue-rotate(180deg) invert() contrast(0.75);
+}
+img[src="https://bm5cdn.azureedge.net/newdefault/images/logo/logo-binusmaya.png"] {
+    filter: hue-rotate(180deg) invert() brightness(2);
+}
+
+/* Menu */
+.header .top-navigation .navigation .menu > li.current {
+    background: #414042;
+}
+.header .top-navigation .navigation .menu > li.current > a::after,
+.header .top-navigation .navigation .menu > li.current > span.wrapper::after {
+    background: #f48b31;
+}
+
+/* Notification Bar */
+.header .top-navigation .expand-notification .sub-menu li.view-all {
+    color: #fff;
+    background: #303130;
+}
+.header .top-navigation .expand-notification .sub-menu li.list-notification {
+    background: #101010;
+}
+.header .top-navigation .expand-notification .sub-menu li.list-notification .notification .thumbnail {
+    background: none;
+}
+.header .top-navigation .expand-notification .sub-menu li.list-notification .notification .details .description {
+    /*filter: brightness(1.5);*/
+    filter: hue-rotate(180deg) invert();
+}
+
+/* Profile Bar */
+.header .top-navigation .expand-settings .sub-menu li.sub-title {
+    color: #ffffff;
+    background: #303130;
+}
+.header .top-navigation .expand-settings .sub-menu li.setting-content {
+    background: #101010;
+}
+.header .top-navigation .expand-settings .sub-menu li.setting-content .details {
+    color: #ffffff;
+}
+.header .top-navigation .expand-settings .sub-menu li.setting-content .details .link a {
+    color: inherit;
+}
+
+/* Search Bar */
+.header .top-navigation .navigation .menu .expand-search-form .search-form .search-form-field {
+    color: #c9c9c9;
+}
+.header .top-navigation .navigation .menu .expand-search-form .sub-menu {
+    background: #303130;
+}
+.header .top-navigation .navigation .menu .expand-search-form .sub-menu li.sub-title {
+    background: #414042;
+}
+
+/* Dashboard Widgets */
+#main-content.has-widget {
+    background: #101010;
+}
+#main-content.has-widget .widget-parent .widget,
+#main-content.has-widget .widget-parent .widget .widget-footer,
+#main-content.has-widget .box-container,
+.agenda-navigation,
+.body-navigation .nav-head,
+.header .top-navigation .expand-notification .sub-menu li.sub-title {
+    background: #202120;
+    border-color: #484948;
+}
+
+/* Workarounds for static (image-based) widgets*/
+img[onerror='this.onerror=null; this.src="https://bm5cdn.azureedge.net/asset/images/404/404-GPA.png";'],
+img[onerror='this.onerror=null; this.src="https://bm5cdn.azureedge.net/asset/images/404/404-SAT.png";'] {
+    filter: hue-rotate(180deg) invert() contrast(0.75);
+}
+
+/* Forms */
+input,
+select,
+.user-role .wrap .field .component .login-role .combobox-label {
+    background-color: #101010;
+}
+.user-role .wrap .field .component .login-role .combobox-label::after {
+    background-color: #101010;
+}
+.custom-combobox {
+    background: #101010;
+}
+.custom-combobox .combobox-label {
+    color: #ffffff;
+}
+.search-filter-form {
+    background: none;
+}
+
+/* Typography */
+#page .page-sub-heading h2,
+form label {
+    color: #fff;
+}
+
+/* Icons */
+.nav.prev-button,
+.nav.next-button,
+.btn-nav.prev,
+.btn-nav.next,
+.btn-nav.up,
+.btn-nav.down,
+.freeze-pane .dataTables_paginate > .paginate_button.previous:not(:hover),
+.freeze-table .dataTables_paginate > .paginate_button.previous:not(:hover),
+.freeze-pane .dataTables_paginate > .paginate_button.next:not(:hover),
+.freeze-table .dataTables_paginate > .paginate_button.next:not(:hover) {
+    filter: brightness(0.7) contrast(250%);
+}
+.custom-combobox::after,
+.freeze-pane .dataTables_filter label::before,
+.freeze-table .dataTables_filter label::before {
+    filter: brightness(0.7) contrast(250%);
+}
+.icon:not(.icon-twitter):not(.icon-facebook):not(.icon-lms-checklist) {
+    filter: brightness(2);
+}
+.iDownload {
+    filter: invert();
+}
+.input-group .addon {
+    background: #848484;
+}
+
+
+.header .top-navigation .navigation .menu > li > a,
+.header .top-navigation .navigation .menu > li > span.wrapper,
+.user-profile .details .action a {
+    color: #ccc;
+    border-right: 1px solid #c9c9c9
+}
+
+.page-information {
+    background: #414042;
+}
+
+.body-navigation .nav-head ul li a {
+    color: #bbb;
+}
+
+/* Table */
+table thead,
+.legend.new-layout,
+.legend .header {
+    background: #414042;
+}
+table tbody,
+table tfoot,
+table tbody tr {
+    background: #101010;
+}
+.freeze-pane .dataTables_filter,
+.freeze-table .dataTables_filter,
+.freeze-pane .dataTables_length,
+.freeze-table .dataTables_length,
+.freeze-pane .dataTables_length select,
+.freeze-table .dataTables_length select {
+    background: #414042;
+}
+table.zebra tbody tr:nth-child(even) {
+    background: #202120;
+}
+.notifications .list-notification .notification:nth-child(2n) {
+    background: #202120;
+}
+table tbody tr th {
+    background: #414042;
+}
+.iDescription div[style="background-color: #e8e8e8;border: 1px solid Gray; padding:20px 20px 0px 20px;"] {
+    color: #414042;
+    filter: invert(1);
+}
+td.iComponentsSummary,
+td.iLOSummary,
+td.iComponentsSSR,
+td.iWeightSummary {
+    color: #414042;
+    filter: hue-rotate(180deg) invert(1);
+}
+
+/* Topics */
+.session-wrap,
+.topics-wrap,
+.class-resource-item .weekdetail {
+    color: #5e5e5e;
+    filter: hue-rotate(180deg) invert(1);
+}
+
+/* BINUSMAYA 3 and 4 Polyfill */
+/* Logo */
+#app-name a {
+    filter: hue-rotate(180deg) invert() contrast(0.75);
+}
+/* Forms */
+.wrap-outer {
+    background: #202120;
+}
+h1,
+h2,
+h3,
+:not(.class-resource-item .detailed) h4,
+h5,
+h6 {
+    color: #ffffff
+}
+/* Tables */
+table {
+    background: #101010;
+}
+table tbody tr:nth-child(2n) {
+    background: #303130;
+}
+table tbody tr td {
+    border-left: 1px solid #414042;
+}
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+    background: #000000;
+    color: #ffffff
+}
+input {
+    color: #ffffff
+}
+/* Popups (Fancybox) */
+.fancybox-outer {
+    background: #202120;
+    color: #ffffff
+}
+/* Icons */
+img[src="../../../staff/images/base/loading-circle.gif"],
+img[src="https://binusmaya.binus.ac.id/student/images/loading.gif"] {
+    filter: hue-rotate(180deg) invert();
+}
+}
