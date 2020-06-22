@@ -1,3 +1,4 @@
+/* BASE STYLING, for BINUSMAYA 5-7 */
 body {
     background: #101010;
     color: #ffffff;
@@ -12,7 +13,9 @@ body {
     opacity: 0.8;
 }
 #login,
-.login {
+.login,
+#login-form,
+#login-form .desc-section {
     background: #202120;
 }
 .login form.custom-form .custom-textbox .icon-wrap {
@@ -52,22 +55,63 @@ img[src="/Content/logo.png"] {
     filter: contrast(0) brightness(2);
 }
 .banner-image,
-.ribbon {
+.ribbon,
+.svgcon-binus-ribbon {
     filter: hue-rotate(180deg) invert() contrast(0.75);
+}
+#tagline-banner-tail{
+    filter: hue-rotate(180deg) invert() contrast(0.88);
 }
 img[src="https://bm5cdn.azureedge.net/newdefault/images/logo/logo-binusmaya.png"] {
     filter: hue-rotate(180deg) invert() brightness(2);
 }
 
+.logo-37{
+    filter: hue-rotate(180deg) invert() contrast(0.88);
+}
+    
 /* Menu */
-.header .top-navigation .navigation .menu > li.current {
+.header .top-navigation .navigation .menu > li.current,
+.header .top-navigation .navigation .menu > li.expand-menu.current,
+.header .top-navigation .navigation .menu > li.expand-menu.current > a,
+.header .top-navigation .navigation .menu > li.expand-menu.current > a::after,
+.header .top-navigation .navigation .menu > li.expand-menu.current > span.wrapper,
+.header .top-navigation .navigation .menu > li.expand-menu.current > span.wrapper::after,
+.header .top-navigation .expand-menu .sub-menu{
     background: #414042;
+}
+.header .top-navigation .expand-menu .sub-menu.cloning-menu{
+    background: #202120;
+    box-shadow: none;
+}
+.header .top-navigation .expand-menu .sub-menu.cloning-menu.zebra{
+    background: #101010;
+}
+.header .top-navigation .expand-menu .sub-menu.cloning-menu li a{
+    color: #ffffff
 }
 .header .top-navigation .navigation .menu > li.current > a::after,
 .header .top-navigation .navigation .menu > li.current > span.wrapper::after {
     background: #f48b31;
 }
-
+.header .top-navigation .expand-menu .sub-menu li::before,
+.header .top-navigation .expand-menu .sub-menu.primary-menu .mCSB_scrollTools .mCSB_draggerRail,
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    background: #ffffff
+}
+/* Menu Arrow */
+.header .top-navigation .expand-menu .sub-menu-child-indicator.primary{
+    filter: saturate(0) contrast(3) brightness(0.65);
+}
+.header .top-navigation .expand-menu .sub-menu-child-indicator{
+    filter: saturate(0) invert() brightness(3.5) contrast(1.17);
+}
+.header .top-navigation .expand-menu .sub-menu-child-indicator.zebra{
+    filter: saturate(0) invert() brightness(3.5) contrast(3.75);
+}
+.header .top-navigation .expand-menu .sub-menu {
+    border: 1px solid #adadad
+}
 /* Notification Bar */
 .header .top-navigation .expand-notification .sub-menu li.view-all {
     color: #fff;
@@ -182,6 +226,9 @@ form label {
 .input-group .addon {
     background: #848484;
 }
+.loader .indicator{
+    filter: hue-rotate(180deg) invert() contrast(0.75);
+}
 
 
 .header .top-navigation .navigation .menu > li > a,
@@ -192,7 +239,7 @@ form label {
 }
 
 .page-information {
-    background: #414042;
+    background: #303130;
 }
 
 .body-navigation .nav-head ul li a {
@@ -239,6 +286,10 @@ td.iWeightSummary {
     filter: hue-rotate(180deg) invert(1);
 }
 
+.exam-notes-div {
+    background: #303130;
+}
+
 /* Topics */
 .session-wrap,
 .topics-wrap,
@@ -247,7 +298,12 @@ td.iWeightSummary {
     filter: hue-rotate(180deg) invert(1);
 }
 
-/* BINUSMAYA 3 and 4 Polyfill */
+/* Popups (SweetAlert2 / swal2) */
+.swal2-popup{
+    background: #202120;
+}
+
+/* POLYFILL for BINUSMAYA 3-4 */
 /* Logo */
 #app-name a {
     filter: hue-rotate(180deg) invert() contrast(0.75);
@@ -259,10 +315,16 @@ td.iWeightSummary {
 h1,
 h2,
 h3,
-:not(.class-resource-item .detailed) h4,
+:not(.class-resource-item):not(.detailed) h4,
 h5,
-h6 {
-    color: #ffffff
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    color: #ffffff;
 }
 /* Tables */
 table {
@@ -294,3 +356,47 @@ img[src="../../../staff/images/base/loading-circle.gif"],
 img[src="https://binusmaya.binus.ac.id/student/images/loading.gif"] {
     filter: hue-rotate(180deg) invert();
 }
+
+/* POLYFILL for Student Practicum (lab.slc.net) */
+.cform {
+    color: #fff;
+    text-shadow: 0 1px 0 #202120
+}
+a {
+    color: #0098D7;
+}
+.ftitle, footer {
+    color: #fff;
+}
+/* NOTE: Galaxion uses dark mode by default, so expect minor changes */
+
+/* POLYFILL for Scribees */
+img[src="http://binus.ac.id/scribees/wp-content/uploads/2020/04/sitelogo.svg"],
+img[src="https://binus.ac.id/scribees/wp-content/themes/binus-2018-163-scdc-oldoc/image/logo.png"] {
+    filter: contrast(0) brightness(2);
+}
+.block-header.type-1 .the-h3,
+.empty-data,
+.generic-form .field-label, .generic-form label,
+.generic-form .text.form-control,
+.C--side-menu.type--1 .side-menu__body .content__list-menu .side-menu .menu__item a,
+.breadcrumb li {
+    color: #fff;
+}
+.C--side-menu.type--1 .side-menu__body .content__list-menu .side-menu .menu__item a:hover {
+    color: #bbb;
+}
+.M--navigation.type--1 .navigation .menu .menu--component,
+.M--navigation.type--1 .navigation .notifications {
+    background: #303130;
+}
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control,
+.generic-form .input-group .input-group-addon {
+    background: #414042;
+}
+
+/* POLYFILL for Collabees */
+#login .user-input label span {
+    color: #ffffff
+}
+/* TODO: Add more Collabees support */
