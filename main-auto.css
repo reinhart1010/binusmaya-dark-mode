@@ -272,12 +272,16 @@ table.zebra tbody tr:nth-child(even) {
 .notifications .list-notification .notification:nth-child(2n) {
     background: #202120;
 }
-table tbody tr th {
+table tbody tr th, table th {
     background: #414042;
 }
 .iDescription div[style="background-color: #e8e8e8;border: 1px solid Gray; padding:20px 20px 0px 20px;"] {
     color: #414042;
     filter: invert(1);
+}
+li.iLO[style="text-align:left; background:white; border:none; word-break:break-all;"],
+li.iTLS[style="text-align:left; background:white; border:none; word-break:break-all;"]{
+    background: none !important;
 }
 td.iComponentsSummary,
 td.iLOSummary,
@@ -308,6 +312,14 @@ td.iWeightSummary {
 /* Logo */
 #app-name a {
     filter: hue-rotate(180deg) invert() contrast(0.75);
+}
+/* Navbar */
+#user-role {
+    background: #414042;
+}
+/* Tabs */
+#body-nav ul li a{
+    border-bottom: 5px solid #202120;
 }
 /* Forms */
 .wrap-outer {
@@ -356,6 +368,9 @@ input {
 img[src="../../../staff/images/base/loading-circle.gif"],
 img[src="https://binusmaya.binus.ac.id/student/images/loading.gif"] {
     filter: hue-rotate(180deg) invert();
+}
+img[src="https://bm5cdn.azureedge.net/asset/images/loading.gif"] {
+    filter: hue-rotate(180deg) invert() contrast(0.75);
 }
 
 /* POLYFILL for Student Practicum (lab.slc.net) */
